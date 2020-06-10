@@ -1,0 +1,64 @@
+.noticias
+  max-width: 544px
+  list-style: none
+  padding:0px
+  margin: 40px 0px
+
+  li
+    height: 176px
+    max-width: 544px
+    margin-bottom: 56px
+
+    img
+      display: block
+      width: 100%
+      height: 100%
+      -o-object-fit: cover
+      object-fit: cover
+
+  .content_txt
+    float: left
+    width: 54%
+    flex: 1 1 auto
+
+    p
+      font-size: 0.93em
+      font-weight: bold
+      line-height: 22px
+      letter-spacing: normal
+      text-align: left
+      max-width: 355px
+
+@media (max-width: 1280px)
+  .noticias li .content_txt p
+    width: 45%
+
+.card-image
+  display: block
+  width: 240px
+  min-width: 240px
+  max-height: 100%
+  min-height: 176px
+  float: left
+  margin-right: 10px
+
+.articles-container
+  margin-bottom: 64px
+  margin-top: 64px
+
+  .row
+    justify-content: space-evenly
+    margin: 0px
+
+.image-container
+  position: relative
+  height: 176px
+
+.noticias li:hover
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.32)
+
+.date
+  font-size: 0.800em
+  font-weight: normal
+  color: #717171
+  margin-top: 20px

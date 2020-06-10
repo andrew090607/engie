@@ -1,0 +1,107 @@
+.slider
+  max-width: 544px
+  margin: 40px 0px
+  padding: 0px 5% 0px 5%
+  .elemento
+    overflow: hidden !important
+    height: 408px
+    margin-top: 0px
+    margin-bottom: 0px
+    
+    img
+      width: 100%
+      height: 100%
+  .bottom_p
+    top: 130px
+  
+
+
+@supports (object-fit: cover)
+  .slider img
+    height: 100%
+    object-fit: cover
+    object-position: center center
+
+
+
+.elipse_slider img
+  width: 30px !important
+  height: 30px  !important
+  margin: 10px
+
+.slider_interno
+  width: 100%
+  height: auto
+
+  img
+    width: 100%
+    height: auto
+    
+
+  h1
+    position: absolute
+    top: 15%
+    left: 9%
+    color: #fafafa
+
+@supports (object-fit: cover)
+  .slider_interno img
+    width: 100%
+    object-fit: cover
+    object-position: center center
+
+.rectangle
+  width: 100%
+  list-style: none
+  padding: 0px
+  margin: 0px
+  elemento
+    height: 214px
+    width: 100%
+    margin: 20px 0px
+    position: relative
+    padding: 0px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    -webkit-transition: all .5s
+    -moz-transition: all .5s
+    -o-transition: all .5s
+    transition: all .5s
+  &:hover .background-image
+    -webkit-filter: brightness(95%)
+    filter: brightness(95%)
+    -webkit-transform: scale(1.2)
+    transform: scale(1.2)
+
+
+.opacity
+  width: 100%
+  height: 214px
+  position: absolute
+  top: 0px
+  left: 0px
+  background-color: rgba(0, 0, 0, 0.4)
+
+.rectangle
+  p
+    color: #fafafa
+    top: 83px
+    left: 19px
+    float: left
+    text-align: left
+    position: absolute
+
+.controls
+  height: 408px
+  margin-top: 0px
+  margin-bottom: 0px
+  .elipse_slider
+    width: 50px
+    height: 50px
+    bottom: 34px
+    float: right
+    right: 39px
+    position: absolute
+  .elipse_slider_left
+    right: 109px
